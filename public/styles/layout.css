@@ -18,8 +18,20 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Bungee", sans-serif;
 }
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+.container {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main {
+  width: 90pc;
+  text-align: center;
+  background-color: #f4f1ec;
+}

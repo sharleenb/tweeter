@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  width: 90pc;
+}
+
+nav {
+  position: fixed;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  width: 90pc;
+  height: 120px;
+  color: #FFFFFF;
+  background-color: #4056A1;
+};
+
+span {
+  font-family: "Bungee", sans-serif;
+}
+
+p {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+
+
