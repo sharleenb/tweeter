@@ -22,6 +22,8 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -51,7 +53,7 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
+        <form id="submit" method="POST" action="/tweets">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
@@ -63,6 +65,22 @@
         </section> 
       </section>
     </main>
-    
+
+    <script>
+      const $button = $("#submit");
+      $button.submit(function(event) {
+        event.preventDefault();
+        const tweetData = ($(this).serialize());
+        $.ajax({
+          type: "POST", 
+          url: "/tweets", 
+          data: tweetData,
+          success: (response) => {
+            console.log(tweetData);
+          },
+        }
+        );
+      })
+     </script>
   </body>
 </html>
