@@ -1,28 +1,32 @@
-html {
-  box-sizing: border-box;
-  width: 90pc;
-}
-
 nav {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  width: 90pc;
+  width: 100%;
   height: 120px;
+  background-color: none;
   color: #FFFFFF;
-  background-color: #4056A1;
-};
-
-span {
   font-family: "Bungee", sans-serif;
 }
 
-p {
-  box-sizing: border-box;
-  font-family: "Source Sans Pro";
+.nav-section {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  text-align: center;
+  font-family: "Source Sans Pro";
+}
+
+nav div i {
+  color: red;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: #4056A1;
+  }
 }
 
 
