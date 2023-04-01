@@ -8,7 +8,9 @@ tweetText.on('input', function() {
   
   if (childNode.innerHTML < 0) {
     $(childNode).css("color", "red")
-  } 
+  } else {
+    $(childNode).css("color", "#545149")
+  }
 })
 });
 
