@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   background-color: #d6c391;
   background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
@@ -7,3 +7,17 @@ header {
   justify-content: flex-end;
   align-items: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-top: 7em;
+    margin-left: 2em;
+    height: 400px;
+    width: 60%;
+  }
+  .header img {
+    width: 200px;
+  }
+}
+
+
