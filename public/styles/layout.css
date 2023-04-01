@@ -18,7 +18,7 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: "Bungee", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 
@@ -28,10 +28,17 @@ body {
 
 .container {
   font-family: "Source Sans Pro", sans-serif;
+  width: 90%;
+  margin: 0 1.5em;
+  background-color: #f4f1ec;
 }
 
-main {
-  width: 90pc;
-  text-align: center;
-  background-color: #f4f1ec;
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+  }
+  .container {
+    margin-top: 5em;
+  }
+
 }
