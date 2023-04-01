@@ -1,8 +1,14 @@
 article {
   display: block;
+  margin-bottom: 1.5em;
 }
 
 .all-tweets {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tweet {
   margin-top: 10px;
   padding: 1em;
   border-width: 5px;
@@ -10,8 +16,12 @@ article {
   background-color: #f4f1ec;
 }
 
-.all-tweets:hover {
+.tweet:hover {
   box-shadow: 5px 5px #9eaacf;
+}
+
+article.tweet img {
+  width: 5%;
 }
 
 article.tweet header {
@@ -20,8 +30,14 @@ article.tweet header {
   padding-bottom: 1em;
   height: 50%;
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
 }
+
+article.tweet header #handle {
+  float: right;
+}
+
 
 article.tweet p {
   display: flex;
@@ -34,15 +50,18 @@ article.tweet footer {
   justify-content: space-between;
 
 }
-article.tweet footer p {
-  font-size: small;
+
+.days {
+  font-size: smaller;
+  font-family: "Source Sans Pro";
 }
 
 article.tweet i {
-  padding: 8px;
+  padding: 4px;
+  font-size: smaller;
 }
 
-i:hover {
+article.tweet i:hover {
   color: #d6c391 ;
 }
 
