@@ -1,8 +1,27 @@
-.new-tweet {
- padding: 1.5em;
+.emptyTweet {
+  border: 7px solid red;
+  align-items: center;
+  padding: .7em;
+  font-size: 26pt;
+  font-weight: 500;
+  color: red;
+  
+}
+.exceedChar {
+  border: 7px solid red;
+  align-items: center;
+  padding: .7em;
+  font-size: 26pt;
+  font-weight: 500;
+  color: red;
 }
 
-div {
+.new-tweet {
+ padding: 1.5em;
+ margin-bottom: 1.5em;
+}
+
+form div {
   display: flex;
   justify-content: space-between;
   font-family: "Bungee", sans-serif;
@@ -18,13 +37,6 @@ button {
   color:#545149;
 }
 
-label {
-  display: flex;
-  justify-content: flex-start;
-  font-family: "Source Sans Pro";
-  font-weight: 600;
-}
-
 textarea {
   display: flex;
   justify-content: flex-start;
@@ -34,4 +46,7 @@ textarea {
   border-bottom: 5px solid #545149;
   background-color: #f4f1ec;
   resize: none;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
 }
+
