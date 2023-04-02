@@ -33,8 +33,10 @@ $(document).ready(() => {
     <article class="tweet"> 
       <header>
         <img src=${tweet["user"].avatars} alt="profile picture" />
+        <div>
         <h5>${tweet["user"].name}</h5> 
-        <h4 class="handle">${tweet["user"].handle}</h4>
+        <h5 class="handle">${tweet["user"].handle}</h5>
+        </div>
       </header>
       <p> ${escape(tweet["content"].text)} </p>
       <hr></hr>
