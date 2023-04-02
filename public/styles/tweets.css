@@ -34,16 +34,23 @@ article.tweet header {
   align-items: center;
 }
 
-article.tweet header #handle {
-  float: right;
+article header div {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+.handle {
+  color:#c7cddf
+}
 
 article.tweet p {
   display: flex;
   align-items: flex-start;
   font-weight: 700;
 }
+
 
 article.tweet footer {
   display: flex;
