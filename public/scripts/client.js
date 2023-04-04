@@ -65,7 +65,7 @@ $(document).ready(() => {
       $(".emptyTweet").show();
     } else {
       $(".exceedChar").hide(),
-        $(".emptyTweet").hide(),
+      $(".emptyTweet").hide(),
         $.ajax({
           type: "POST",
           url: "/tweets",
@@ -74,6 +74,9 @@ $(document).ready(() => {
             loadTweets();
           },
         });
+        counter.innerHTML = 140;
+        let tweetValue = $(this).find("textarea")[0];
+        tweetValue.value = '';
     }
   });
 
