@@ -21,6 +21,10 @@
  margin-bottom: 1.5em;
 }
 
+label {
+  font-weight: 600;
+}
+
 form div {
   display: flex;
   justify-content: space-between;
@@ -47,6 +51,6 @@ textarea {
   background-color: #f4f1ec;
   resize: none;
   font-family: "Source Sans Pro";
-  font-weight: 600;
+  font-weight: 400;
 }
 
